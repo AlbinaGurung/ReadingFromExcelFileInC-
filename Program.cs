@@ -3,8 +3,7 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 using ReadingExcelData;
 using Microsoft.Data.SqlClient;
-using static ReadingExcelData.DTOExcelFile;
-using static ReadingExcelData.Connection;
+
 
 namespace ReadingExcelData
 {
@@ -67,7 +66,7 @@ namespace ReadingExcelData
 
         }
 
-        private static DataTable ConvertToDataTable(List<DTOExcelFile> excelData)
+        private static DataTable ConvertToDataTable(List<StudentRecordDTO> excelData)
         {
             DataTable table = new DataTable();
 
